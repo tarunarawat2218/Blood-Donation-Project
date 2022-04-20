@@ -6,7 +6,7 @@ router.use(express.static(path.join(__dirname, '/public')));
 
 
 router.get("/", (req, res, next) =>{
-     res.sendFile(path.join(__dirname, '../', '/views','/home.html'));
+     res.render('home', {pageTitle: "Blood Donation"})
      
  });
 // router.get("/", function(req, res, next){

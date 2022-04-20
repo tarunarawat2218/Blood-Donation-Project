@@ -3,7 +3,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 
+
 const app = express();
+
+app.set("view engine", "ejs");
 
 const homeRoutes = require('./routes/home');
 const searchRoutes = require('./routes/search');
@@ -24,7 +27,7 @@ app.use('/contact', contactRoutes);
 app.use('/about', aboutRoutes);
 
 app.use((req, res, next) =>{
-     res.status(404).sendFile(path.join(__dirname, '/views','/404.html'));
+     res.status(404).render('404', {pageTitle: "Page not Found"});
     
 });
 

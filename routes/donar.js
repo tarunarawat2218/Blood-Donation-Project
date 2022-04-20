@@ -6,8 +6,7 @@ router.use(express.static(path.join(__dirname, '/public')));
 
 
 router.use('/', function(req, res, next){
-    res.sendFile(path.join(__dirname, '../', '/views', '/donar.html'));
-    
+    res.render('donar', {pageTitle: "Donar Registration"})
 });
 
 module.exports = router;
