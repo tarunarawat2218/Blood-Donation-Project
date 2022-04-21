@@ -45,14 +45,24 @@ a:hover{
     text-align: center;
     font-family: 'Roboto Slab', serif;
 }
-.email{
-    text-align: center;
-    font-family:  'Roboto Slab', serif;
-    color: honeydew;
+.call{
     padding: 3px;
     margin: 3rem 1rem 5rem;
-
 }
+.email{
+    list-style: none;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.gmail{
+    text-align: center;
+    font-family:  'Roboto Slab', serif;
+    text-decoration: none;
+    color: honeydew;
+    
+}
+
 .social{
     text-align: center;
     padding: 5%;
