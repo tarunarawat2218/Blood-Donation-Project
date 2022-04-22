@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 
-
+const errorController = require('./controller/error')
 
 const app = express();
 
@@ -26,10 +26,7 @@ app.use('/donar', donarRoutes);
 app.use('/contact', contactRoutes);
 app.use('/about', aboutRoutes);
 
-app.use((req, res, next) =>{
-     res.status(404).render('404', {pageTitle: "Page not Found"});
-    
-});
+app.use(errorController.get404);
 
 app.listen(3000, function(){
     console.log('Lets start the project');

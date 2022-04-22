@@ -1,16 +1,15 @@
 const path = require('path');
 const express = require('express');
 
-const router = express.Router();
+const groupController = require('../controller/group');
 
+const router = express.Router();
 
 router.use(express.static(path.join(__dirname, '/public')));
 
+router.get("/", groupController.getSearchGroups);
 
-router.get("/", (req, res, next) =>{
-    res.render("search",{pageTitle: "Search"})
-     
- });
+router.post('/groups',groupController.postSearchGroups);
 
 
 module.exports =router;
