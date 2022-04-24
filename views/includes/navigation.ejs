@@ -8,11 +8,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link active" href="/">Home</a>
-          <a class="nav-link active" href="/search">Search</a>
-          <a class="nav-link active" href="/donar">Donar Registration</a>
-          <a class="nav-link active" href="/contact">Contact</a>
-          <a class="nav-link active" href="/about">About</a>
+          <li class="nav-link active"><a  class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a></li>
+          <li class="nav-link active"><a  class="<%= path === '/search' ? 'active' : '' %>" href="/search">Search</a></li>
+          <li class="nav-link active"><a  class="<%= path === '/donar' ? 'active' : '' %>" href="/donar">Donar Registration</a></li>
+          <li class="nav-link active"><a  class="<%= path === '/contact' ? 'active' : '' %>" href="/contact">Contact</a></li>
+          <li class="nav-link active"><a  class="<%= path === '/about' ? 'active' : '' %>" href="/about">About</a></li>
+          
+          
+          
+          
+          
         </div>
       </div>
     </div>

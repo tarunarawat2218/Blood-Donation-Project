@@ -2,6 +2,10 @@
     padding: 0 0.5rem 0 6rem;
     font-family: 'Roboto Slab', serif;
     
+    
+}
+.nav-link{
+    text-decoration: none;
 }
 a:hover{
     opacity: 0.6;
