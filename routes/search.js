@@ -6,14 +6,11 @@ const router = express.Router();
 
 router.use(express.static(path.join(__dirname, '/public')));
 
-route.use('/search',(req,res,next) =>{
+router.use('/', (req,res,next) =>{
 res.render("search",{
     pageTitle: "Search",
-    path: '/search'
+    path: '/'
 })
-})
-router.post('/groups', (req,res,next) =>{
-    res.redirect('/groups')
 })
 
 

@@ -2,7 +2,8 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const errorController = require('./controller/error')
+const errorController = require('./controller/error');
+const db = require('./util/database');
 
 const app = express();
 
@@ -13,6 +14,8 @@ const searchRoutes = require('./routes/search');
 const donarRoutes = require('./routes/donar');
 const contactRoutes = require('./routes/contact');
 const aboutRoutes = require('./routes/about');
+
+db.execute('SELECT * FROM groups');
 
 
 app.use(bodyParser.urlencoded({extended: true}));
