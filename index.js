@@ -15,7 +15,7 @@ const donarRoutes = require('./routes/donar');
 const contactRoutes = require('./routes/contact');
 const aboutRoutes = require('./routes/about');
 
-db.execute('SELECT * FROM groups');
+
 
 
 app.use(bodyParser.urlencoded({extended: true}));

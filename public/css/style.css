@@ -1,8 +1,6 @@
 .navbar-expand-lg .navbar-nav .nav-link{
     padding: 0 0.5rem 0 6rem;
     font-family: 'Roboto Slab', serif;
-    
-    
 }
 .nav-link{
     text-decoration: none;
@@ -21,9 +19,13 @@ a:hover{
     text-align: center;
    
 }
+a{
+    text-decoration: none;
+}
 .donate{
     color: white;
     font-family: 'Roboto Slab', serif;
+    
 }
 .blood{
     margin-top: 3rem;
@@ -97,7 +99,6 @@ input{
 .div{
     background-color: #FF6D6D;
     width: 100%;
-    
 }
 .about{
     text-align: center;
