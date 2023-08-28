@@ -11,25 +11,7 @@ export default function Home(){
                     </div>
                 </div>
             </div>
-
-        
-            <div className="home">
-                <a href="https://en.wikipedia.org/wiki/Blood_donation">
-                    <h1 className="donate">Donate Blood</h1>
-                </a>
-                <p className="blood">
-                You need a big heart and free mind for blood donation and not money and strength"
-        "Every drop of blood is like a breath for someone! Donate blood"
-       "Never refuse to donate blood if u can, as you may be the next needy"
-        "Blood donation never asks to be rich or poor, any healthy person can donate blood”
-       
-         A life may depend on a gesture from you, you can save many lives with a bottle of blood.
-                </p>
-                {/* Additional content */}
-            </div>
-            
-            
-        </div>
+ </div>
     );
 };
 
